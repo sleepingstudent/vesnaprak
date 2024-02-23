@@ -28,3 +28,16 @@ else:
     header, _, body = obj.partition(b'\x00')
 
     print(body.decode())
+    tree_sha = body.decode().split('\n', 1)[0].split()[1]
+
+    with open(os.path.join(objects_dir, tree_sha[:2], tree_sha[2:]), "rb") as fd:
+        tree_obj, _, tail = zlib.decompress(fd.read()).partition(b'\x00')
+
+    while tail:
+        treeobj, _, tail = tail.partition(b'\x00')
+        tmode, tname = treeobj.split()
+        num, tail = tail[:20], tail[20:]
+        if tmode[:3] == b'100':
+            print(f"blob {num.hex()}\t{tname.decode()}")
+        else:
+            print(f"tree {num.hex()}\t{tname.decode()}")
