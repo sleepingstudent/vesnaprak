@@ -1,0 +1,24 @@
+From bec0dd46baa34225fc2c93cc9ccaff340bdb9005 Mon Sep 17 00:00:00 2001
+From: step <step@Ascorbinka.ascorbinka.org>
+Date: Sun, 24 Mar 2024 02:31:35 +0300
+Subject: [PATCH 4/5] Fix srv
+
+---
+ 20240318/1/srv.py | 3 +++
+ 1 file changed, 3 insertions(+)
+
+diff --git a/20240318/1/srv.py b/20240318/1/srv.py
+index 18c1a23..8312e6f 100644
+--- a/20240318/1/srv.py
++++ b/20240318/1/srv.py
+@@ -61,3 +61,6 @@ with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
+                         hp = field[y][x]['hp'] - damage
+                         field[y][x]['hp'] -= damage
+ 
++                    conn.sendall(f"attack {damage} {hp}\n".encode())
++            else:
++                print("Invalid command")
+\ No newline at end of file
+-- 
+2.34.1
+
