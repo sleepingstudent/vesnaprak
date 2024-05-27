@@ -1,0 +1,133 @@
+# Russian (Russia) translations for PROJECT.
+# Copyright (C) 2024 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2024-04-21 17:55+0300\n"
+"PO-Revision-Date: 2024-04-20 22:04+0300\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ru_RU\n"
+"Language-Team: ru_RU <LL@li.org>\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.15.0\n"
+
+#: mood/server/__init__.py:150
+msgid "Moved to ({}, {})\n"
+msgstr "Перешел в клетку ({}, {})\n"
+
+#: mood/server/__init__.py:176
+msgid "Invalid arguments\n"
+msgstr "Некорректные параметры\n"
+
+#: mood/server/__init__.py:181
+msgid " added {} to ({}, {}) saying {} "
+msgstr " добавил {} в клетку ({}, {}) с фразой: \"{}\" "
+
+#: mood/server/__init__.py:184
+msgid "with hp = {}"
+msgid_plural "with hp = {}"
+msgstr[0] "с {} очком здоровья"
+msgstr[1] "с {} очками здоровья"
+msgstr[2] "с {} очками здоровья"
+
+#: mood/server/__init__.py:186
+msgid " replaced the old monster in "
+msgstr " заменил старого монстра в "
+
+#: mood/server/__init__.py:187
+msgid "({}, {}) with a {} saying {} with hp = {}"
+msgid_plural "({}, {}) with a {} saying {} with hp = {}"
+msgstr[0] "({}, {}) на {} с фразой \"{}\" с {} очком здоровья"
+msgstr[1] "({}, {}) на {} с фразой \"{}\" с {} очками здоровья"
+msgstr[2] "({}, {}) на {} с фразой \"{}\" с {} очками здоровья"
+
+#: mood/server/__init__.py:208
+msgid "Type args"
+msgstr "Напечатайте параметры"
+
+#: mood/server/__init__.py:213
+msgid "No monster here"
+msgstr "Здесь нет такого монстра"
+
+#: mood/server/__init__.py:216
+msgid "No {} here"
+msgstr "{} нет здесь"
+
+#: mood/server/__init__.py:221
+msgid "Invalid arguments"
+msgstr "Некорректные параметры"
+
+#: mood/server/__init__.py:227
+msgid "Unknown weapon"
+msgstr "Неизвестное оружие"
+
+#: mood/server/__init__.py:241
+msgid " attacked {},  damage {} hp\n"
+msgid_plural " attacked {},  damage {} hp\n"
+msgstr[0] " атаковал {},  снял {} очко здоровья\n"
+msgstr[1] " атаковал {},  снял {} очка здоровья\n"
+msgstr[2] " атаковал {},  снял {} очков здоровья\n"
+
+#: mood/server/__init__.py:246
+msgid "{} died"
+msgstr "{} умер"
+
+#: mood/server/__init__.py:251
+msgid "{} now has {} hp."
+msgid_plural "{} now has {} hp."
+msgstr[0] "У {} тeперь {} очко здоровья."
+msgstr[1] "У {} тeперь {} очка здоровья."
+msgstr[2] "У {} тeперь {} очков здоровья."
+
+#: mood/server/__init__.py:307
+msgid "{} moved one cell up"
+msgstr "{} перешел на одну клетку вверх."
+
+#: mood/server/__init__.py:309
+msgid "{} moved one cell down"
+msgstr "{} перешел на одну клетку вниз."
+
+#: mood/server/__init__.py:311
+msgid "{} moved one cell right"
+msgstr "{} перешел на одну клетку вправо."
+
+#: mood/server/__init__.py:313
+msgid "{} moved one cell left"
+msgstr "{} перешел на одну клетку влево."
+
+#: mood/server/__init__.py:358
+msgid "{} joined the game."
+msgstr "{} присоединился к игре."
+
+#: mood/server/__init__.py:387
+msgid "Command is incorrect.\n"
+msgstr "Команда некорректна.\n"
+
+#: mood/server/__init__.py:394
+msgid "Set up locale: {} {}\n"
+msgstr "Установлена локаль: {} {}.\n"
+
+#: mood/server/__init__.py:397
+msgid "Invalid locale: {} {}\n"
+msgstr "Некорректная локаль: {} {}.\n"
+
+#: mood/server/__init__.py:440
+msgid "Moving monsters: on"
+msgstr "Режим блуждающих монстров: включен"
+
+#: mood/server/__init__.py:446
+msgid "Moving monsters: off"
+msgstr "Режим блуждающих монстров: выключен"
+
+#: mood/server/__init__.py:461
+msgid "{} left the game."
+msgstr "{} покинул игру."
+
