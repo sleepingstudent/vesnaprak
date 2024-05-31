@@ -1,0 +1,5 @@
+Metadata-Version: 2.1
+Name: Mood
+Version: 1.0.0
+Summary: PVE adventure multi-user dungeoun game
+Requires-Dist: python-cowsay

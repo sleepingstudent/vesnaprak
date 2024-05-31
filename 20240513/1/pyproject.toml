@@ -1,0 +1,19 @@
+[project]
+name = "Mood"
+version = "1.0.0"
+dependencies = ["python-cowsay"]
+description = "PVE adventure multi-user dungeoun game"
+
+[build-system]
+requires = ['setuptools']
+build-backend = "setuptools.build_meta"
+
+[project.scripts]
+server = "mood.server.__main__:main"
+client = "mood.client.__main__:main"
+
+[tool.setuptools.package-dir]
+mood = "mood"
+
+[tool.setuptools.package-data]
+mood = ["mood/server/*/*/*.mo", "mood/docs/*"]

@@ -1,0 +1,26 @@
+From b4e3dfc7a7e139ccca2b040e97ce41e28258950f Mon Sep 17 00:00:00 2001
+From: step <step@Ascorbinka.ascorbinka.org>
+Date: Sun, 24 Mar 2024 02:31:24 +0300
+Subject: [PATCH 3/5] Fix client
+
+---
+ 20240318/1/client.py | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+diff --git a/20240318/1/client.py b/20240318/1/client.py
+index 1a6f885..06fe8a9 100644
+--- a/20240318/1/client.py
++++ b/20240318/1/client.py
+@@ -6,7 +6,8 @@ import socket
+ import shlex
+ 
+ 
+-
++host = "localhost" if len(sys.argv) < 2 else sys.argv[1]
++port = 1337 if len(sys.argv) < 3 else int(sys.argv[2])
+ 
+ class Mud(cmd.Cmd):
+     jgsbat = cowsay.read_dot_cow(StringIO("""
+-- 
+2.34.1
+
